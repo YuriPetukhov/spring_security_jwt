@@ -1,0 +1,4 @@
+liquibase:
+  change-log: db/changelog/db.changelog-master.xml
+#  defaultSchemaName: security_schema
+#  liquibase-schema-name: service_schema

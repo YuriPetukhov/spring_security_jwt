@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/token_security
+    username: YuriPetukhov
+    password: YuriPetukhov
+    driver-class-name: org.postgresql.Driver
+#    liquibaseSchemaName: service_schema
+liquibase:
+#    liquibaseSchemaName: service_schema
+#    defaultSchemaName: security_schema
+    change-log: classpath:db/changelog/db.changelog-master.yaml
+
+jwt:
+  secret: your_secret_key
+  expiration: 1m
+  refreshTokenExpiration: 10m
+
+security:
+  user:
+    password: password
+    name: user
